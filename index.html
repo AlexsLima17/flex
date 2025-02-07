@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Flex</title>
+    <link rel="stylesheet" href="style.css">
 </head>
     <h1>Gasolina ou Etanol?</h1>
 <body>
     <div class="container">
-        Gasolina
+        <h2>Preço do litro (R$):</h2>
+        <p>Gasolina<input type="number" id="gasolina" placeholder="0.00"></p>
+        <p>Etanol<input type="number" id="etanol" placeholder="0.00"></p>
+        <h2>Consumo médio do veículo (km/litro):</h2>
+        <p>Km/Litro Gasolina<input type="number" id="kmGasolina" placeholder="0.0"></p>
+        <p>Km/Litro Etanol<input type="number" id="kmEtanol" placeholder="0.0"></p>
+
+        <table>
+            <tr>
+                <td id="left"><img src="img/flex.png" alt="medidor" id="status"></td>
+                <td><img src="img/calcflex.png" alt="flex" onclick="calcular()"></td>
+            </tr>
+        </table>
     </div>
 
 
